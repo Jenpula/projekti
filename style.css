@@ -127,6 +127,22 @@ header nav a:hover {
     background: darken(var(--accent-color), 10%);
 }
 
+/* Napin tyylit */
+#backToTopBtn {
+    position: fixed; /* Kiinnittää napin paikoilleen */
+    bottom: 30px; /* Etäisyys alareunasta */
+    right: 30px; /* Etäisyys oikeasta reunasta */
+    background-color: #ff3c9a; /* Taustaväri */
+    color: white; /* Tekstin väri */
+    border: none; /* Ei reunusta */
+    border-radius: 5px; /* Pyöristetyt kulmat */
+    padding: 10px 15px; /* Sisätilat */
+    font-size: 16px; /* Fontin koko */
+    cursor: pointer; /* Osoittimen muutos hiiren ylle siirryttäessä */
+    transition: background-color 0.3s, transform 0.3s; /* Siirtymäefektit */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Varjo */
+}
+
 /* Footer */
 footer {
     background: var(--primary-color);

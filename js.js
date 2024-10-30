@@ -1,5 +1,3 @@
-
-
 window.onscroll = function() {
     const backToTopBtn = document.getElementById("backToTopBtn");
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
