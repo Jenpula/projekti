@@ -1,4 +1,141 @@
-h1, h3{
+/* Perusasetukset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Väripaletti */
+:root {
+    --primary-color: #f8fd6b; /* Tumma harmaa */
+    --secondary-color: #717171; /* Vaaleampi harmaa */
+    --accent-color: #0077cc; /* Sininen korostusväri */
+    --background-color: #f9f9f9; /* Taustaväri */
+    --text-color: #040404; /* Pääteksti */
+}
+
+/* Kehon yleiset tyylit */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Navigaatio */
+header {
+    background: var(--primary-color);
+    padding: 20px 0;
     text-align: center;
-    margin: 100px
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: var(--accent-color);
+}
+
+/* Hero- tai otsikko-osio */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: var(--secondary-color);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Portfolio-osio */
+.portfolio {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin: 50px 0;
+}
+
+.portfolio-item {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+}
+
+.portfolio-item h3 {
+    padding: 15px;
+    color: var(--primary-color);
+}
+
+/* Yhteystiedot */
+.contact {
+    text-align: center;
+    padding: 40px 20px;
+    background: var(--secondary-color);
+    color: white;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact button {
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact button:hover {
+    background: darken(var(--accent-color), 10%);
+}
+
+/* Footer */
+footer {
+    background: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 0.9em;
 }
