@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="js.js"></script>
 </head>
 <body>
 
@@ -67,22 +68,6 @@
 <!-- Scrollaus nappi -->
 
 <button id="bakToTopBtn" onclick="scrollToTop()">Takaisin ylös</button>
-<script>
-    window.onscroll = function() {
-        const backToTopBtn = document.getElementById("backToTopBtn");
-        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-            backToTopBtn.style.display = "block";
-    } else {
-
-        backToTopBtn.style.display = "none";
-    }
-}
-
-    function scrollToTop() {
-        document.body.scrollTop = 0; 
-        document.documentElement.scrollTop = 0;
-    }
-</script>
 
 </body>
 </html>
