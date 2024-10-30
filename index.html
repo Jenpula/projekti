@@ -1,15 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Portfolio</h1>
-    <h3>Jenni Annala</h3>
-    
+<!-- Navigaatio -->
+<header>
+    <nav>
+        <a href="#about">Tietoja minusta</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Yhteystiedot</a>
+    </nav>
+</header>
+
+<!-- Hero tai pääotsikko-osio -->
+<section class="hero" id="about">
+    <h1>Tervetuloa Portfoliooni</h1>
+    <p>Olen digitaalisen median ammattilainen, joka rakastaa luoda innovatiivisia ratkaisuja.</p>
+</section>
+
+<!-- Portfolio-osio -->
+<section class="portfolio" id="portfolio">
+    <h2>Projektit</h2>
+    <div class="portfolio-item">
+        <img alt="Projekti 1">
+        <h3>Projektin nimi 1</h3>
+        <p>Kuvaus projektista.</p>
+    </div>
+    <div class="portfolio-item">
+        <img  alt="Projekti 2">
+        <h3>Projektin nimi 2</h3>
+        <p>Kuvaus projektista.</p>
+    </div>
+    <div class="portfolio-item">
+        <img alt="Projekti 3">
+        <h3>Projektin nimi 3</h3>
+        <p>Kuvaus projektista.</p>
+    </div>
+</section>
+
+<!-- Yhteystiedot-osio -->
+<section class="contact" id="contact">
+    <h2>Ota yhteyttä</h2>
+    <form>
+        <input type="text" name="name" placeholder="Nimi" required>
+        <input type="email" name="email" placeholder="Sähköpostiosoite" required>
+        <textarea name="message" rows="5" placeholder="Viesti" required></textarea>
+        <button type="submit">Lähetä</button>
+    </form>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Jenni Annala. Kaikki oikeudet pidätetään.</p>
+</footer>
+
 </body>
 </html>
