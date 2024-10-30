@@ -8,9 +8,9 @@
 
 /* Väripaletti */
 :root {
-    --primary-color: #f8fd6b; /* Tumma harmaa */
-    --secondary-color: #717171; /* Vaaleampi harmaa */
-    --accent-color: #0077cc; /* Sininen korostusväri */
+    --primary-color: #fd6b8d; /* nav ja foot teksti */
+    --secondary-color: #494949; /* harmaa */
+    --accent-color: #e12171; /* korostusväri */
     --background-color: #f9f9f9; /* Taustaväri */
     --text-color: #040404; /* Pääteksti */
 }
