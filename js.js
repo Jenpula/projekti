@@ -12,6 +12,6 @@ window.onscroll = function() {
 function scrollToTop() {
     window.scrollTo({
         top: 0,
-        behaviour: "smooth"
+        behavior: "smooth"
     });
 }
